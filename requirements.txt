@@ -1,1 +1,4 @@
 # this file contains required packages for the project
+# to install these packages, run the following command
+# pip install -r requirements.txt
+
