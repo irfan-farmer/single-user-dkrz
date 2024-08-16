@@ -1,6 +1,7 @@
 # Use a base image from quay.io for Jupyter with Python
 FROM quay.io/jupyter/base-notebook:latest
 
+# Maintainer of this dockerfile 
 LABEL org.opencontainers.image.authors="khan@dkrz.de"
 
 # Install mamba into the base environment
