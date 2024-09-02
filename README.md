@@ -1,2 +1,2 @@
 # single-user-dkrz
-dkrz jupyter notebooks 
+This repo contains dockerfile for calling DKRZ WPS service. 
