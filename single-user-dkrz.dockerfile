@@ -1,6 +1,9 @@
 # Use the Jupyter base notebook image as the base image
 FROM quay.io/jupyter/base-notebook:latest
 
+# Maintainer of this dockerfile 
+LABEL org.opencontainers.image.authors="Irfan Khan"
+
 # Switch to root user to install packages
 USER root
 
@@ -29,6 +32,9 @@ RUN mamba install -c conda-forge \
     rooki \
     ipywidgets\
     --yes
+
+# Copy example notebooks into the container
+COPY ./notebooks /home/jovyan/work/
 
 # Switch back to the default jovyan user
 USER ${NB_UID}
